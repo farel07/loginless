@@ -5,18 +5,25 @@
 body {
   font-family: sans-serif;
   overflow-x: hidden;
+  height: 1000px;
 }
-
+/* Font */
+@font-face {
+  font-family: De Valencia;
+  src: url("../Font/De\Valencia\\(beta\).otf") format("truetype");
+}
+/* End Font */
 .home {
   width: 100%;
   /* height: 550px; */
   height: 625px;
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/Jam2.jpg);
   background-size: cover;
+  background-position-y: -100px;
 }
 .header {
   width: 100%;
-  height: 100px;
+  height: 50px;
   display: flex;
 }
 .header h2 {
@@ -35,9 +42,14 @@ nav {
   width: 75%;
   margin: 5px auto;
   border-radius: 50px;
+  border: 2px solid gold;
 }
 h1 {
   color: rgb(255, 217, 0);
+  font-family: De Valencia;
+}
+h2 {
+  color: gold;
 }
 
 nav ul {
@@ -54,17 +66,19 @@ nav ul li {
 nav ul li a {
   color: gold;
   text-decoration: none;
-  padding: 8px 5px 8px 5px;
+  padding: 10px 5px 10px 5px;
   box-sizing: border-box;
 }
 nav ul li:hover {
   background-color: gold;
+  border-radius: 50px;
 }
 nav ul li a:hover {
   color: white;
   text-decoration: none;
   background-color: black;
   transition: 1s;
+  border-radius: 50px;
 }
 /* SEARCH */
 
@@ -76,15 +90,40 @@ nav ul li a:hover {
   border: 1px solid black;
 }
 
-.search button {
-  padding: 3px;
-  border-radius: 50px;
-  background-color: gold;
-  border: 1px solid black;
-}
 /* END SEARCH */
-
 /* end nav */
+
+/* DISC */
+.mulai {
+  width: 300px;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 50px;
+}
+.mulai h3 {
+  color: gold;
+  font-size: 30px;
+}
+.mulaiBelanja {
+  width: 50%;
+  height: 50px;
+  background-color: yellow;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  box-sizing: border-box;
+}
+.mulaiBelanja h3 {
+  text-align: center;
+  line-height: 50px;
+  color: black;
+  font-size: 20px;
+}
 
 /* responsive */
 
